@@ -24,6 +24,9 @@ module "grafana" {
   allowed_grafana_cidr = "0.0.0.0/0"
   aws_profile          = "default"
   aws_region           = "us-east-1"
+
+  ssh_port             = 22
+  grafana_port         = 3000
 }
 
 output "instance_ip" {
