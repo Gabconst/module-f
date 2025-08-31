@@ -27,6 +27,11 @@ module "grafana" {
 
   ssh_port             = 22
   grafana_port         = 3000
+
+  egress_from_port     = 0
+  egress_to_port       = 0
+  egress_protocol      = "-1"
+  egress_cidr_blocks   = ["0.0.0.0/0"]
 }
 
 output "instance_ip" {
