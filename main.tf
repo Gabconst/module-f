@@ -18,7 +18,7 @@ module "grafana" {
   source = "git::https://github.com/Gabconst/GRAFANA-IAC.git//compute?ref=main"
 
   ami_id               = "ami-020cba7c55df1f615"
-  instance_type        = "t2.medium"
+  instance_type        = "t2.xlarge"
   key_name             = "devops-pdi"
   allowed_ssh_cidr     = "0.0.0.0/0"
   allowed_grafana_cidr = "0.0.0.0/0"
