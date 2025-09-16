@@ -32,6 +32,10 @@ module "grafana" {
   egress_to_port       = 0
   egress_protocol      = "-1"
   egress_cidr_blocks   = ["0.0.0.0/0"]
+
+  # <<< Tudo sobre disco definido aqui
+  root_volume_size     = 27
+  root_volume_type     = "gp3"
 }
 
 output "instance_ip" {
