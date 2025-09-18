@@ -33,8 +33,8 @@ module "grafana" {
   egress_protocol      = "-1"
   egress_cidr_blocks   = ["0.0.0.0/0"]
 
-  # <<< Tudo sobre disco definido aqui
-  root_volume_size     = 27
+  # Disco
+  root_volume_size     = 23
   root_volume_type     = "gp3"
 }
 
